@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".GameActivity"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/style_menu_button"
+            android:contentDescription="@null"
+            android:src="@drawable/cross"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/style_menu_button"
+            android:backgroundTint="@color/button_blue"
+            android:contentDescription="@null"
+            android:padding="6dp"
+            android:src="@drawable/baseline_menu_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/menu"
+            app:layout_constraintEnd_toStartOf="@+id/menu"
+            app:layout_constraintStart_toEndOf="@+id/close"
+            app:layout_constraintTop_toTopOf="@+id/close" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/style_gamefield"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/close">
+
+            <ImageView
+                android:background="@color/white"
+                android:id="@+id/cell_02"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:contentDescription="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cell_01"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:background="@color/white"
+                android:id="@+id/cell_00"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:contentDescription="@null"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:background="@color/white"
+                android:id="@+id/cell_22"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:contentDescription="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cell_12" />
+
+            <ImageView
+                android:background="@color/white"
+                android:id="@+id/cell_21"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:contentDescription="@null"
+                app:layout_constraintEnd_toStartOf="@+id/cell_22"
+                app:layout_constraintStart_toEndOf="@+id/cell_20"
+                app:layout_constraintTop_toBottomOf="@+id/cell_12" />
+
+            <ImageView
+                android:background="@color/white"
+                android:id="@+id/cell_20"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:contentDescription="@null"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cell_10" />
+
+            <ImageView
+                android:background="@color/white"
+                android:id="@+id/cell_12"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:contentDescription="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cell_02" />
+
+            <ImageView
+                android:background="@color/white"
+                android:id="@+id/cell_01"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:contentDescription="@null"
+                app:layout_constraintEnd_toStartOf="@+id/cell_02"
+                app:layout_constraintStart_toEndOf="@+id/cell_00"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:background="@color/white"
+                android:id="@+id/cell_11"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:contentDescription="@null"
+                app:layout_constraintEnd_toStartOf="@+id/cell_12"
+                app:layout_constraintStart_toEndOf="@+id/cell_10"
+                app:layout_constraintTop_toBottomOf="@+id/cell_01" />
+
+            <ImageView
+                android:background="@color/white"
+                android:id="@+id/cell_10"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:contentDescription="@null"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cell_00" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

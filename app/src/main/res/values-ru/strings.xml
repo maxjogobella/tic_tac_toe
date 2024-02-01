@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tic-Tac-Toe</string>
+    <string name="new_game">Новая игра</string>
+    <string name="settings">Настройки</string>
+    <string name="continue_game">Продолжить игру</string>
+    <string name="russian">Русский</string>
+    <string name="english">English</string>
+    <string name="language">Язык</string>
+    <string name="volume">Звук</string>
+    <string name="difficult">Сложность</string>
+    <string name="easy">Легко</string>
+    <string name="rules">Правила игры</string>
+    <string name="back">Вернуться</string>
+    <string name="diagonal_row">Ряд по диагонали</string>
+    <string name="horizontal_row">Ряд по горизонтали</string>
+    <string name="vertical_row">Ряд по вертикали</string>
+    <string name="menu">Меню</string>
+    <string name="save_and_exit">Сохранить и выйти</string>
+    <string name="you_won">Вы выиграли</string>
+    <string name="dialogBack">Вернуться назад</string>
+    <string name="win">Вы победили</string>
+    <string name="lose">Вы проиграли</string>
+    <string name="draw">Ничья</string>
+    <string name="medium">Средний</string>
+    <string name="hard">ХАРД</string>
+</resources>

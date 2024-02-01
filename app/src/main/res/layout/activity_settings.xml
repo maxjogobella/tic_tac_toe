@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".SettingsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/settings"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textViewVolume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/volume"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSettings" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:splitTrack="false"
+            android:thumb="@drawable/ic_thumb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewVolume" />
+
+        <TextView
+            android:id="@+id/textViewDifficult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/difficult"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/seekBar" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            android:contentDescription="@null"
+            android:src="@drawable/next"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textViewDifficult"
+            app:layout_constraintTop_toBottomOf="@id/textViewDifficult"
+            tools:layout_editor_absoluteY="337dp" />
+
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription="@null"
+            android:src="@drawable/previous"
+            app:layout_constraintEnd_toStartOf="@+id/textViewDifficult"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewDifficult"
+            tools:layout_editor_absoluteY="337dp" />
+
+        <TextView
+            android:id="@+id/infoLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/easy"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/previous"
+            app:layout_constraintEnd_toStartOf="@+id/next"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/previous"
+            app:layout_constraintTop_toTopOf="@+id/previous" />
+
+        <TextView
+            android:id="@+id/textViewRules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/rules"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/previous" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_marginTop="8dp"
+            android:id="@+id/switchVert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewRules" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchHor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/switchVert" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchDia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/switchHor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vertical_row"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/switchVert"
+            app:layout_constraintStart_toEndOf="@+id/switchVert"
+            app:layout_constraintTop_toTopOf="@+id/switchVert" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/horizontal_row"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/switchHor"
+            app:layout_constraintStart_toEndOf="@+id/switchHor"
+            app:layout_constraintTop_toTopOf="@+id/switchHor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diagonal_row"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/switchDia"
+            app:layout_constraintStart_toEndOf="@+id/switchDia"
+            app:layout_constraintTop_toTopOf="@+id/switchDia" />
+
+        <Button
+            android:id="@+id/toBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/custom_button_yellow"
+            android:text="@string/back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/switchDia"
+            tools:layout_editor_absoluteX="24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

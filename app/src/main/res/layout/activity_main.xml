@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/mainLogo"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="64dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@id/buttonNewGame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNewGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="@drawable/custom_button_yellow"
+        android:fontFamily="@font/roboto"
+        android:text="@string/new_game"
+        app:layout_constraintBottom_toTopOf="@id/buttonContinue"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="@drawable/custom_button_blue"
+        android:fontFamily="@font/roboto"
+        android:text="@string/continue_game"
+        app:layout_constraintBottom_toTopOf="@id/buttonSettings" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="@drawable/custom_button_yellow"
+        android:fontFamily="@font/roboto"
+        android:text="@string/settings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="32dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

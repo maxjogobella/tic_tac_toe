@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/seekbar_empty">
+    </item>
+
+    <item>
+        <clip android:drawable="@drawable/seekbar_progress_custom"/>
+    </item>
+
+</selector>

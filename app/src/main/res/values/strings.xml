@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Tic-Tac-Toe</string>
+    <string name="new_game">New game</string>
+    <string name="settings">Settings</string>
+    <string name="continue_game">Continue game</string>
+    <string name="russian">Russian</string>
+    <string name="english">English</string>
+    <string name="language">Language</string>
+    <string name="volume">Volume</string>
+    <string name="difficult">Level</string>
+    <string name="easy">Easy</string>
+    <string name="rules">Rules</string>
+    <string name="back">Back</string>
+    <string name="diagonal_row">Diagonal row</string>
+    <string name="horizontal_row">Horizontal row</string>
+    <string name="vertical_row">Vertical row</string>
+    <string name="menu">Menu</string>
+    <string name="save_and_exit">Save and exit</string>
+    <string name="you_won">You won</string>
+    <string name="dialogBack">Back</string>
+    <string name="win">You won</string>
+    <string name="lose">You lose</string>
+    <string name="medium">Medium</string>
+    <string name="draw">Draw</string>
+    <string name="hard">HARD</string>
+
+    <string-array name="game_level">
+        <item>@string/easy</item>
+        <item>@string/medium</item>
+        <item>@string/hard</item>
+    </string-array>
+</resources>
